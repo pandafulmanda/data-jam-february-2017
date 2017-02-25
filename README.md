@@ -45,3 +45,16 @@ The data are found in the following files:
 |seats_cabin_first| number of passenger seats avail. on flight in first class|
 |seats_cabin_business| number of passenger seats avail. on flight in business class|
 |seats_cabin_coach| number of passenger seats avail. on flight in coach class|
+
+
+
+1. **routes.csv**: flights.csv -- Flight-specific route plan data
+
+|Column|Description|
+|----|----------|
+|flight_id| unique flight id string|
+|order| 1|  -- int starting at 1
+|name| e.g. 'KAYEX'|
+|type| 'Waypoint'  -- or 'Origin Airport' or 'Reporting Point' or 'VOR-TAC (NAVAID)' or 'Destination Airport' or probably some others|
+|latitude| e.g. 36.4875|
+|longitude| e.g. -120.9478611|
