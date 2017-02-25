@@ -12,7 +12,7 @@ The data are found in the following files:
 
   |Column|Description|
 |----|----------|
-|airport| Airport code; will be 'KIAH' for this dataset|
+|airport| Airport code; will be 'KHOU' for this dataset|
 |time| Epoch time ([see here for more info](https://en.wikipedia.org/wiki/Unix_time))|
 |cloud_friendly| Cloudy/Clear/Etc.|
 |cloud_altitude| Height of clouds (99999 if Clear)|
