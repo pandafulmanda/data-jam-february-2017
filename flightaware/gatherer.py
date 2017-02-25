@@ -1,8 +1,6 @@
 from constants import airports, timestamps, api
 from flightaware.api import FlightAwareSoap
 
-from zeep import exceptions
-
 def flatten(lists):
   return [item for items in lists for item in items if len(item) > 0]
 
