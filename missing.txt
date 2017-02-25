@@ -1,0 +1,85 @@
+missing id for  {
+    'ident': 'SWA2525',
+    'actual_ident': None,
+    'departuretime': 1487548800,
+    'arrivaltime': 1487552700,
+    'origin': 'KDAL',
+    'destination': 'KHOU',
+    'aircrafttype': 'B733',
+    'meal_service': None,
+    'seats_cabin_first': 0,
+    'seats_cabin_business': 0,
+    'seats_cabin_coach': 137
+}
+missing id for  {
+    'ident': 'SWA376',
+    'actual_ident': None,
+    'departuretime': 1487635200,
+    'arrivaltime': 1487638200,
+    'origin': 'KSAT',
+    'destination': 'KHOU',
+    'aircrafttype': 'B733',
+    'meal_service': None,
+    'seats_cabin_first': 0,
+    'seats_cabin_business': 0,
+    'seats_cabin_coach': 143
+}
+missing id for  {
+    'ident': 'SWA47',
+    'actual_ident': None,
+    'departuretime': 1487635200,
+    'arrivaltime': 1487639100,
+    'origin': 'KDAL',
+    'destination': 'KHOU',
+    'aircrafttype': 'B738',
+    'meal_service': None,
+    'seats_cabin_first': 0,
+    'seats_cabin_business': 0,
+    'seats_cabin_coach': 175
+}
+missing id for  {
+    'ident': 'KLM5992',
+    'actual_ident': 'DAL2460',
+    'departuretime': 1487625000,
+    'arrivaltime': 1487633220,
+    'origin': 'KATL',
+    'destination': 'KHOU',
+    'aircrafttype': None,
+    'meal_service': 'Economy: No meal',
+    'seats_cabin_first': 0,
+    'seats_cabin_business': 0,
+    'seats_cabin_coach': 117
+}
+missing id for  {
+    'ident': 'KLM5669',
+    'actual_ident': 'DAL1390',
+    'departuretime': 1487625600,
+    'arrivaltime': 1487633820,
+    'origin': 'KATL',
+    'destination': 'KHOU',
+    'aircrafttype': None,
+    'meal_service': 'Economy: No meal',
+    'seats_cabin_first': 0,
+    'seats_cabin_business': 0,
+    'seats_cabin_coach': 117
+}
+missing track for SWA849-1487399283-airline-0713
+missing track for SWA1524-1487399281-airline-0041
+missing track for SWA856-1487399283-airline-0359
+missing track for SWA505-1487399282-airline-0480
+missing track for SWA229-1487399281-airline-0103
+missing route for SWA1849-1487312841-airline-0431
+missing route for SWA1735-1487399281-airline-0697
+missing route for SWA1488-1487399281-airline-1004
+missing route for SWA1116-1487399281-airline-0273
+missing route for SWA817-1487399283-airline-0054
+missing route for SWA1013-1487399280-airline-0215
+missing route for SWA109-1487399281-airline-1033
+missing route for SWA2864-1487399281-airline-0840
+missing route for SWA308-1487399281-airline-0833
+missing route for SWA306-1487399281-airline-0227
+missing route for SWA1203-1487399281-airline-0425
+missing route for SWA881-1487399283-airline-0614
+missing route for SWA2831-1487399281-airline-0933
+missing route for SWA944-1487399283-airline-0324
+missing route for SWA6954-1487399283-airline-0690
