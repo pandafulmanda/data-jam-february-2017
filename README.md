@@ -60,7 +60,7 @@ The data are found in the following files:
 
 1. **tracks.csv**: flights.csv -- Flight-specific location tracking data
 
-|Column|Description|
+ |Column|Description|
 |-----|--------|
 |flight_id| unique flight id string|
 |timestamp| Epoch time ([see here for more info](https://en.wikipedia.org/wiki/Unix_time))|
@@ -71,3 +71,67 @@ The data are found in the following files:
 |altitudeStatus| None|
 |updateType| e.g. 'TA'|
 |altitudeChange|e.g. 'C'|
+
+## How was the data gathered?
+
+[code](https://github.com/houstondatavis/data-jam-february-2017/blob/data-pipeline/flightaware/gatherer.py)
+
+## Quick Load
+
+### R
+
+```r
+
+make_csv_url <- function(name){
+  url <- paste('https://raw.githubusercontent.com/houstondatavis/data-jam-february-2017/data-pipeline/', name, '.csv', sep='')
+
+  return(url)
+}
+
+flights <- read.csv(make_csv_url('flights'))
+
+routes <- read.csv(make_csv_url('routes'))
+
+tracks <- read.csv(make_csv_url('tracks'))
+
+weather <- read.csv(make_csv_url('weather'))
+
+```
+
+### Python
+
+```python
+# http://stackoverflow.com/questions/32400867/pandas-read-csv-from-url#answer-32400969
+
+import pandas as pd
+import io
+import requests
+
+def make_csv_url(name):
+  return "https://raw.githubusercontent.com/houstondatavis/data-jam-february-2017/data-pipeline/" + name + ".csv"
+
+flights = pd.read_csv(
+  io.StringIO(
+    requests.get(make_csv_url('flights')).content.decode('utf-8')
+  )
+)
+
+routes = pd.read_csv(
+  io.StringIO(
+    requests.get(make_csv_url('routes')).content.decode('utf-8')
+  )
+)
+
+tracks = pd.read_csv(
+  io.StringIO(
+    requests.get(make_csv_url('tracks')).content.decode('utf-8')
+  )
+)
+
+weather = pd.read_csv(
+  io.StringIO(
+    requests.get(make_csv_url('weather')).content.decode('utf-8')
+  )
+)
+
+```
