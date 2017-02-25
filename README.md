@@ -47,8 +47,8 @@ The data are found in the following files:
 |seats_cabin_coach| number of passenger seats avail. on flight in coach class|
 
 
-
 1. **routes.csv**: flights.csv -- Flight-specific route plan data
+
 
 |Column|Description|
 |----|----------|
@@ -58,3 +58,18 @@ The data are found in the following files:
 |type| 'Waypoint'  -- or 'Origin Airport' or 'Reporting Point' or 'VOR-TAC (NAVAID)' or 'Destination Airport' or probably some others|
 |latitude| e.g. 36.4875|
 |longitude| e.g. -120.9478611|
+
+
+1. **tracks.csv**: flights.csv -- Flight-specific location tracking data
+
+|Column|Description|
+|-----|--------|
+|flight_id| unique flight id string|
+|timestamp| Epoch time ([see here for more info](https://en.wikipedia.org/wiki/Unix_time))|
+|latitude| e.g. 37.63875|
+|longitude| e.g. -122.3621|
+|groundspeed| ground speed (knots)|
+|altitude| altitude (hundreds of feet)|
+|altitudeStatus| None|
+|updateType| 'TA'|
+|altitudeChange| 'C'|
