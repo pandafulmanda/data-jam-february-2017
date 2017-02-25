@@ -60,37 +60,37 @@ class Gatherer:
 
     return data
 
-  def get_track(self, flightID):
+  def get_track(self, flight_id):
 
     try:
-      reports = self.api.service.GetHistoricalTrack(faFlightID=flightID)
+      reports = self.api.service.GetHistoricalTrack(faFlightID=flight_id)
 
       for report in reports:
-        report.flight_id = flightID
+        report.flight_id = flight_id
 
       return reports
 
     except:
 
-      print('missing track for ' + flightID)
+      print('missing track for ' + flight_id)
 
       return []
 
 
-  def get_route(self, flightID):
+  def get_route(self, flight_id):
 
     try:
-      reports = self.api.service.DecodeFlightRoute(faFlightID=flightID).data
+      reports = self.api.service.DecodeFlightRoute(faFlightID=flight_id).data
 
       for order, report in enumerate(reports):
-        report.flight_id = flightID
+        report.flight_id = flight_id
         report.order = order
 
       return reports
 
     except:
 
-      print('missing route for ' + flightID)
+      print('missing route for ' + flight_id)
 
       return []
 
