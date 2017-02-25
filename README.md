@@ -27,5 +27,21 @@ The data are found in the following files:
 |wind_direction| wind direction (knots); 360 means true north|
 |wind_speed| wind speeds (knots)|
 |wind_speed_gust| gust speeds (knots)|
-|raw_data| METAR data used by pilots, e.g.'KIAH 250453Z 36015G22KT 10SM CLR 16/04 A2995 RMK AO2 SLP142 T01610044'
+|raw_data| METAR data used by pilots, e.g.'KIAH 250453Z 36015G22KT 10SM CLR 16/04 A2995 RMK AO2 SLP142 T01610044'|
 
+1. **flights.csv**: flights.csv -- Flight-specific data
+
+  |Column|Description|
+|----|----------|
+|flight_id| unique flight id string|
+|ident| 'ANA7211'|
+|actual_ident| 'UAL128'|
+|departuretime| Epoch time ([see here for more info](https://en.wikipedia.org/wiki/Unix_time))|
+|arrivaltime| Epoch time ([see here for more info](https://en.wikipedia.org/wiki/Unix_time))|
+|origin| Origin airport code|
+|destination| Destination airport code|
+|aircrafttype| Aircraft type (e.g. 'B787')|
+|meal_service| 'Business: Dinner / Economy: Dinner'|
+|seats_cabin_first| number of passenger seats avail. on flight in first class|
+|seats_cabin_business| number of passenger seats avail. on flight in business class|
+|seats_cabin_coach| number of passenger seats avail. on flight in coach class|
