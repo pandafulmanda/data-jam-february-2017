@@ -46,11 +46,9 @@ The data are found in the following files:
 |seats_cabin_business| number of passenger seats avail. on flight in business class|
 |seats_cabin_coach| number of passenger seats avail. on flight in coach class|
 
-
 1. **routes.csv**: flights.csv -- Flight-specific route plan data
 
-
-|Column|Description|
+ |Column|Description|
 |----|----------|
 |flight_id| unique flight id string|
 |order| 1|  -- int starting at 1
@@ -71,5 +69,5 @@ The data are found in the following files:
 |groundspeed| ground speed (knots)|
 |altitude| altitude (hundreds of feet)|
 |altitudeStatus| None|
-|updateType| 'TA'|
-|altitudeChange| 'C'|
+|updateType| e.g. 'TA'|
+|altitudeChange|e.g. 'C'|
